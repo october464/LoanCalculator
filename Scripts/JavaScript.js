@@ -24,11 +24,13 @@ function loanResults() {
     //Compute Total Payment
     let totalPayment = (monthly * calculatePayments).toFixed(2);
 
+    //Balance
+    let rBalance = (totalInterest - principal).toFixed(2);
     //Show Results
     document.getElementById("mPayments").innerHTML = "$" + monthlyPayment;
     document.getElementById("iRPayments").innerHTML = "$" +  totalInterest;
-    document.getElementById("Payments").innerHTML = "$" + totalPayment
-
+    document.getElementById("remainPayments").innerHTML = "$" + totalPayment;
+    document.getElementById("remainPayments").innerHTML = "$" + rBalance;
 
     //console.log(amount, months, interest);
     return;
