@@ -2,7 +2,7 @@
 //Event that listens if the loan button is clicked
 document.getElementById("loan").addEventListener("click", loanResults);
 
-function loanResults(e) {
+function loanResults() {
     //Where the input is stored
     let amount = document.getElementById("amountLoan").value;
     let months = document.getElementById("monthsLoan").value;
